@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jj.barrierfree.SearchFilterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:text="서울을 가지세요"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/textView16"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="원하는 조건으로 검색하세요"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView17"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/searchfileter_name">
+
+                <TextView
+                    android:text="점포명"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_accessible_black_48dp"
+                    android:id="@+id/imageView"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_accessible_black_48dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/searchfilter_type">
+
+                <TextView
+                    android:text="업종별"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_accessible_black_48dp"
+                    android:id="@+id/imageView2"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_accessible_black_48dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/searchfilter_area">
+
+                <TextView
+                    android:text="지역"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_accessible_black_48dp"
+                    android:id="@+id/imageView3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_accessible_black_48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/searchfilter_elevator">
+
+                <TextView
+                    android:text="엘리베이터"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_accessible_black_48dp"
+                    android:id="@+id/imageView4"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_accessible_black_48dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/searchfilter_parking">
+
+                <TextView
+                    android:text="장애인 주차구역"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_accessible_black_48dp"
+                    android:id="@+id/imageView5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_accessible_black_48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/searchfilter_restroom">
+
+                <TextView
+                    android:text="장애인용 화장실"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_accessible_black_48dp"
+                    android:id="@+id/imageView6"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_accessible_black_48dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
